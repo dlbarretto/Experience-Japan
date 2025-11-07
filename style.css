@@ -437,7 +437,7 @@ body{
 .general-section {
     position: relative;
     height: 115vh;
-    background: url('Assets/act5bg3.jpg') center center/cover no-repeat;
+    background: url('Assets/act5img.jpg') center center/cover no-repeat;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -553,7 +553,7 @@ body{
 }
 
 .third-section{
-    background-image: url('Assets/act5bg3.jpg');
+    background-image: url('Assets/act5bgp3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -668,7 +668,7 @@ body{
 }
 
 .fourth-section {
-    background-image: url('Assets/act5bg4.jpg');
+    background-image: url('Assets/act5bgp4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
