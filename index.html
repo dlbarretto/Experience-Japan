@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Japan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid d-flex align-items-center">
+            <img src="Assets/japanflag.jpg" alt="Japan Flag" class="nav-flag me-3">
+            <ul class="navbar-nav d-flex flex-row ms-auto ms-md-auto justify-content-center justify-content-md-end">
+                <li class="nav-item"><a class="nav-link" href="#discover">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cuisine">Cuisine</a></li>
+                <li class="nav-item"><a class="nav-link" href="#places">Places</a></li>
+                <li class="nav-item"><a class="nav-link nav-login" href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid hero-section" id="hero">
+        <div class="bg-slides" aria-hidden="true">
+            <div class="bg-slide slide-a"></div>
+            <div class="bg-slide slide-b"></div>
+            <div class="bg-overlay"></div>
+        </div>
+        <div class="row align-items-center min-vh-100">
+            <div class="col-12 text-center hero-content">
+                <h1 class="hero-title fw-bold">Japan Awaits Your Adventure</h1>
+                <h5 class="hero-subtitle mt-2 mb-4">
+                    Adventure begins the moment you step into Japan. Let its culture and beauty guide your way
+                </h5>
+                <div class="hero-actions d-flex align-items-center justify-content-center flex-wrap">
+                    <button class="btn btn-lg hero-btn hero-btn-primary" onclick="scrollToSection('discover')">Discover</button>
+                    <button class="btn btn-lg hero-btn btn-outline-light" onclick="window.open('https://flights.philippineairlines.com/en-ph/flights-to-japan', '_blank')">Flight now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid second-section" id="discover">
+        <div class="about-japan">
+            <div class="about-header">
+                <h2>Discover Japan</h2>
+                <p class="about-text">
+                    A country where ancient heritage meets cutting-edge modern life. 
+                    From the quiet streets of Kyoto’s temples to the dazzling skyline of Tokyo, 
+                    every destination offers a unique blend of tradition and innovation.
+                </p>
+                <p class="about-text-left">
+                    Experience Japan’s natural beauty through every season: cherry blossoms painting the parks in spring, 
+                    summer festivals full of color, autumn leaves turning mountains gold, 
+                    and winter resorts covered in soft snow.
+                </p>
+                <p class="about-text-right-lower">
+                    Whether you’re tasting authentic sushi, relaxing in a soothing onsen,
+                    or exploring centuries-old castles, Japan offers endless adventures
+                    waiting to be discovered.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid video-section">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="Assets/act5vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content text-center">
+            <h2 class="section-title">Experience Japan in Motion</h2>
+            <p class="section-text">Feel Japan's Heartbeat as you wander from bright city, relaxing temples, and delicious cuisine — every moment tells a story.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid general-section">
+        <div class="general-overlay"></div>
+        <div class="general-content text-center">
+            <h2 class="section-title general-title">General Information</h2>
+            <div class="general-info-text container px-4 py-3">
+                <p class="section-text mb-3">
+                    Japan is an island nation located in the Northern Hemisphere, west of the Pacific Ocean. 
+                    It shares its maritime borders with the Republic of Korea, China, and Russia. 
+                    The country has a total land area of about 377,975 square kilometers and is divided into 47 prefectures. 
+                    Its capital city, Tokyo, is a bustling metropolis with nearly 14 million residents, 
+                    accounting for around 10% of Japan’s total population.
+                </p>
+                <p class="section-text mb-3">
+                    Japan’s national flag, known as the Nisshoki or Hinomaru, features a red circle representing the sun 
+                    on a white background. The national anthem, “Kimi ga Yo,” is one of the world’s oldest and shortest anthems. 
+                    The country’s main language is Japanese, and the primary religions practiced are Shintoism, Buddhism, 
+                    and Christianity. Japan is also home to the Imperial Family, whose members play a symbolic role in 
+                    national unity and tradition.
+                </p>
+                <p class="section-text">
+                    As of 2021, Japan’s population was approximately 125 million. 
+                    The country’s government operates as a constitutional monarchy with a parliamentary system, 
+                    including the House of Representatives (Shugiin) and the House of Councillors (Sangiin). 
+                    The national currency is the Japanese Yen, and Japan’s major industries include automobiles, 
+                    electronics, and technology. With a GDP of about US$4.975 trillion and a GDP per capita of 
+                    US$34,366 (as of 2020), Japan stands as one of the world’s leading economic powers.
+                </p>
+            </div>
+            <p class="section-text general-text mt-3">
+                <a href="https://www.japan.go.jp/japan/index.html" target="_blank">
+                    (Click here to read more about general information)
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid third-section" id="cuisine">
+        <div class="row align-items-center min-vh-100 position-relative">
+            <div class="col-12 text-center third-text-overlay">
+                <h2 class="section-title">Experience Japanese Cuisine</h2>
+                <p class="section-text">
+                    Japanese food offers a delicious blend of fresh ingredients and unique <br>
+                    flavors that highlight the country’s rich culinary tradition.
+                </p>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <img src="Assets/1f.png" alt="Food 1" class="slider-img">
+                    <img src="Assets/2f.png" alt="Food 2" class="slider-img">
+                    <img src="Assets/3f.png" alt="Food 3" class="slider-img">
+                    <img src="Assets/4f.png" alt="Food 4" class="slider-img">
+                    <img src="Assets/5f.png" alt="Food 5" class="slider-img">
+                    <img src="Assets/6f.png" alt="Food 6" class="slider-img">
+                    <img src="Assets/7f.png" alt="Food 7" class="slider-img">
+                    <img src="Assets/8f.png" alt="Food 8" class="slider-img">
+                    <img src="Assets/9f.png" alt="Food 9" class="slider-img">
+                    <img src="Assets/10f.png" alt="Food 10" class="slider-img">
+                    <img src="Assets/11f.png" alt="Food 11" class="slider-img">
+                    <img src="Assets/12f.png" alt="Food 12" class="slider-img">
+                    <img src="Assets/1f.png" alt="Food 1" class="slider-img">
+                    <img src="Assets/2f.png" alt="Food 2" class="slider-img">
+                    <img src="Assets/3f.png" alt="Food 3" class="slider-img">
+                    <img src="Assets/4f.png" alt="Food 4" class="slider-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fourth-section" id="places">
+        <div class="row align-items-center min-vh-100 position-relative">
+            <div class="col-12 text-center fourth-text-overlay">
+                <h2 class="section-title">A Place of Timeless Beauty</h2>
+                <p class="section-text">
+                    Japanese places offer a beautiful mix of modern cities and peaceful <br>
+                    landscapes, showcasing the country’s culture, history, and natural beauty.
+                </p>
+            </div>
+            <div class="places-slider-container">
+                <div class="places-slider-track">
+                    <img src="Assets1p.png" alt="Place 1" class="places-slider-img">
+                    <img src="Assets/2p.png" alt="Place 2" class="places-slider-img">
+                    <img src="Assets/3p.png" alt="Place 3" class="places-slider-img">
+                    <img src="Assets/4p.png" alt="Place 4" class="places-slider-img">
+                    <img src="Assets/5p.png" alt="Place 5" class="places-slider-img">
+                    <img src="Assets/6p.png" alt="Place 6" class="places-slider-img">
+                    <img src="Assets/7p.png" alt="Place 7" class="places-slider-img">
+                    <img src="Assets/8p.png" alt="Place 8" class="places-slider-img">
+                    <img src="Assets/9p.png" alt="Place 9" class="places-slider-img">
+                    <img src="Assets/10p.png" alt="Place 10" class="places-slider-img">
+                    <img src="Assets/11p.png" alt="Place 11" class="places-slider-img">
+                    <img src="Assets/12p.png" alt="Place 12" class="places-slider-img">
+                    <img src="Assets/1p.png" alt="Place 1" class="places-slider-img">
+                    <img src="Assets/2p.png" alt="Place 2" class="places-slider-img">
+                    <img src="Assets/3p.png" alt="Place 3" class="places-slider-img">
+                    <img src="Assets/4p.png" alt="Place 4" class="places-slider-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
