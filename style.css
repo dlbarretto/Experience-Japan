@@ -745,61 +745,69 @@ body{
 .navbar {
   overflow-x: hidden;
   white-space: nowrap;
+  background: transparent; 
 }
 
 .navbar .container-fluid {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  padding: 0 12px;
+  align-items: center;       
+  justify-content: center;   
+  gap: 1rem;                 
+  padding: 8px 16px;
+  flex-wrap: nowrap;         
+}
+
+.nav-flag {
+  width: 40px;
+  height: 28px;
+  object-fit: cover;
+  margin: 0;                
+  vertical-align: middle;    
 }
 
 .navbar-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap !important;
+  justify-content: center;
   gap: 0.5rem;
+  flex-wrap: nowrap !important;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
-  flex-shrink: 0;
   color: white;
   text-decoration: none;
   padding: 0 10px;
   font-weight: 500;
+  flex-shrink: 0;
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
 
+
 @media (min-width: 992px) {
   .navbar .container-fluid {
-    padding-right: 40px; 
-    padding-left: 20px;
+    justify-content: space-between;  
+    padding-right: 40px;             
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 576px) {
   .navbar .container-fluid {
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 0.4rem;
     padding: 6px 4px;
   }
 
   .nav-flag {
-    width: 28px;
-    height: 20px;
-    margin-right: 6px;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4px;
+    width: 30px;
+    height: 22px;
   }
 
   .nav-link {
