@@ -322,9 +322,9 @@ body{
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  flex-wrap: nowrap !important;
   width: 100%;
-  padding: 10px 20px !important;
+  padding: 8px 10px !important;
+  flex-wrap: nowrap !important;
 }
 
 .navbar .container-fluid {
@@ -335,38 +335,65 @@ body{
   width: 100%;
 }
 
+.nav-flag {
+  width: 35px !important;
+  height: auto !important;
+  margin-right: 5px !important;
+  flex-shrink: 0 !important;
+}
+
 .navbar-nav {
   display: flex !important;
   flex-direction: row !important;
+  justify-content: flex-end !important;
   align-items: center !important;
-  justify-content: center !important;
   flex-wrap: nowrap !important;
+  gap: 4px !important;
   margin: 0 !important;
-  gap: 10px !important;
+  padding: 0 !important;
 }
 
 .nav-item {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   flex: 0 0 auto !important;
 }
 
 .nav-link {
+  font-size: 13px !important;
+  padding: 4px 6px !important;
   white-space: nowrap !important;
-  text-align: center !important;
-  padding: 5px 8px !important;
 }
 
-.nav-flag {
-  width: 40px !important;
-  height: auto !important;
-  flex-shrink: 0 !important;
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 11px !important;
+    padding: 3px 4px !important;
+  }
+
+  .nav-flag {
+    width: 28px !important;
+    margin-right: 4px !important;
+  }
+
+  .navbar {
+    padding: 5px 8px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-link {
+    font-size: 10px !important;
+    padding: 2px 3px !important;
+  }
+
+  .nav-flag {
+    width: 25px !important;
+  }
 }
 
 body {
   overflow-x: hidden !important;
 }
+
 
 
 @media (max-width: 992px) {
