@@ -394,7 +394,42 @@ body {
   overflow-x: hidden !important;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav img {
+    vertical-align: middle;
+    height: auto;
+    max-height: 40px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav img {
+        margin-top: 10px;
+    }
+}
 
 @media (max-width: 992px) {
     .about-header h2 {
