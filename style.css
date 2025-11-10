@@ -394,25 +394,6 @@ body {
   overflow-x: hidden !important;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 10px;
-}
-
-nav img {
-    vertical-align: middle;
-}
 
 @media (max-width: 992px) {
     .about-header h2 {
